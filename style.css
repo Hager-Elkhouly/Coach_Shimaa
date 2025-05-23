@@ -1,0 +1,195 @@
+
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar ستايل احترافي */
+    .custom-navbar {
+      /* background: rgba(0, 0, 0, 0.6); */
+      background-color: #ffffff;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: all 0.4s ease;
+      padding: 10px 0;
+    }
+
+    .custom-link {
+      color:  black!important;
+      position: relative;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .custom-link::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background-color: #e91e63;
+      transition: 0.3s;
+    }
+
+    .custom-link:hover::after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+
+    .custom-link:hover {
+      color: #e91e63 !important;
+    }
+
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .navbar-brand span {
+      color: #000;
+      font-size: 1.1rem;
+    }
+
+    /* عشان نسيب مساحة للـ navbar */
+    /* .hero-section {
+      padding-top: 100px;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 2.5rem;
+      color: #e91e63;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      color: #555;
+    } */
+     .hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('img/pexels-photo-949131.jpeg'); /* ضعي صورتك هنا */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* لطبقة تغطية خفيفة فوق الصورة */
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* تغطية شفافة */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  color: #f0f0f0;
+}
+
+.btn-hero {
+  background-color: #e91e63;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+.btn-hero:hover {
+  background-color: #c2185b;
+  transform: scale(1.05);
+}
+
+.about-section {
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  color: #e91e63;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.about-section p,
+.about-section li {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.about-section a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+.about-section a:hover {
+  text-decoration: underline;
+}
+.result-img-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.result-img-card img:hover {
+  transform: scale(1.03);
+}
+.social-section {
+  background-color: #fff;
+}
+
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 26px;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.instagram { background-color: #e91e63; }
+.social-icon.tiktok { background-color: #000000; }
+.social-icon.whatsapp { background-color: #25D366; }
+
+.social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
