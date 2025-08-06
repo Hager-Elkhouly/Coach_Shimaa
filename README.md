@@ -29,3 +29,12 @@ It is a responsive and clean one-page layout built using **HTML**, **CSS**, **Bo
 
 ## 📁 Project Structure
 
+Coach_Shimaa/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+│   └── photo.jpg
+
